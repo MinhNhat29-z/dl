@@ -1,23 +1,13 @@
-function login(username, password) {
-    return username === "admin" && password === "123";
-}
+const login = require("./login");
 
-if (typeof document !== "undefined") {
-    document.getElementById("loginForm").addEventListener("submit", function(event) {
-        event.preventDefault();
+test("Login with correct username and password", () => {
+    expect(login("admin", "123")).toBe(true);
+});
 
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-        const result = document.getElementById("result");
+test("Login with incorrect password", () => {
+    expect(login("admin", "1234")).toBe(false);
+});
 
-        if (login(username, password)) {
-            result.textContent = "Login successful";
-        } else {
-            result.textContent = "Login failed";
-        }
-    });
-}
-
-if (typeof module !== "undefined") {
-    module.exports = login;
-}
+test("Login with incorrect username", () => {
+    expect(login("user", "123")).toBe(false);
+});
