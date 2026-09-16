@@ -1,7 +1,7 @@
 const { checkLogin } = require('./login');
 
 describe('checkLogin', () => {
-  test('trả về true khi username = "admin" và password = "1234"', () => {
+  test('trả về true khi username = "admin" và password = "123"', () => {
     expect(checkLogin('admin', '123')).toBe(true);
   });
 
