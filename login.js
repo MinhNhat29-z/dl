@@ -1,8 +1,4 @@
-/**
- * Hàm kiểm tra đăng nhập đơn giản.
- * Trả về true nếu username = 'admin' và password = '123'
- * Trả về false trong các trường hợp còn lại.
- */
+
 function checkLogin(username, password) {
   return username === 'admin' && password === '1234';
 }
