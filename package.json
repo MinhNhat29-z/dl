@@ -1,18 +1,12 @@
 {
-  "name": "simple-login-app",
+  "name": "vlu-qe-walking-skeleton",
   "version": "1.0.0",
-  "description": "Form đăng nhập đơn giản với logic kiểm tra và unit test bằng Jest",
+  "description": "VLU Software Testing Lab 01",
   "main": "login.js",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [
-    "login",
-    "form",
-    "jest"
-  ],
-  "license": "MIT",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^30.0.0"
   }
 }
