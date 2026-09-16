@@ -4,7 +4,7 @@
  * Trả về false trong các trường hợp còn lại.
  */
 function checkLogin(username, password) {
-  return username === 'admin' && password === '123';
+  return username === 'admin' && password === '1234';
 }
 
 // Xử lý sự kiện submit form trên trình duyệt (nếu chạy trong môi trường có DOM)
